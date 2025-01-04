@@ -59,6 +59,17 @@
             font-size: 1.5em;
             margin: 20px 0;
         }
+        .price .old-price {
+            color: red;
+            text-decoration: line-through;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .price .new-price {
+            font-size: 1.8em;
+            color: #333;
+        }
         .order-button {
             display: flex;
             justify-content: center;
@@ -111,7 +122,8 @@
         </section>
 
         <section class="price">
-            <p>Harga: <strong>Rp 50.000,-</strong></p>
+            <p class="old-price">Rp 100.000,-</p>
+            <p class="new-price">Rp 50.000,-</p>
         </section>
 
         <section class="order-button">
