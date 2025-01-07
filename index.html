@@ -69,17 +69,19 @@
             color: #333;
         }
         .order-button {
-            display: flex;
-            justify-content: center;
+            display: block; /* Ubah flex ke block */
+            margin: 0; /* Hilangkan margin */
         }
         .order-button a {
+            display: block; /* Membuat tombol mengambil lebar penuh */
             background-color: #25d366;
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 0; /* Perbaiki padding agar proporsional */
             font-size: 1.2em;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Lebar penuh */
         }
         .order-button a:hover {
             background-color: #0056b3;
