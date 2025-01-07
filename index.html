@@ -69,19 +69,21 @@
             color: #333;
         }
         .order-button {
-            display: block; /* Ubah flex ke block */
-            margin: 0; /* Hilangkan margin */
+            position: fixed; /* Posisi melayang */
+            bottom: 0; /* Di bagian bawah layar */
+            left: 0;
+            width: 100%; /* Lebar penuh */
+            z-index: 1000; /* Agar berada di atas elemen lain */
+            background-color: #25d366;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
         }
         .order-button a {
-            display: block; /* Membuat tombol mengambil lebar penuh */
-            background-color: #25d366;
+            display: block;
             color: white;
             text-decoration: none;
-            padding: 10px 0; /* Perbaiki padding agar proporsional */
+            padding: 15px 0; /* Perbaiki padding agar proporsional */
             font-size: 1.2em;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Lebar penuh */
+            text-align: center;
         }
         .order-button a:hover {
             background-color: #0056b3;
@@ -104,8 +106,7 @@
             <img src="gambar2.png">
         </section>        
         <section class="order-button">
-            <a href="https://wa.me/yourwhatsappnumber?text=Saya%20ingin%20memesan%20Sandal%20Japit%20Premium"><b></b>Pesan Sekarang</b></a>
+            <a href="https://wa.me/yourwhatsappnumber?text=Saya%20ingin%20memesan%20Sandal%20Japit%20Premium">Pesan Sekarang</a>
         </section>
-    </div>
 </body>
 </html>
